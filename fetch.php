@@ -29,7 +29,7 @@ if(mysqli_num_rows($result) > 0)
 	$output .= '<div class="table-responsive">
 					<table class="table table bordered">
 						<tr>
-							<th>ISBM Name</th>
+							<th>ISBM</th>
 							<th>Libro</th>
 							<th>Genero</th>
 							<th>Autor</th>
@@ -51,6 +51,6 @@ if(mysqli_num_rows($result) > 0)
 }
 else
 {
-	echo 'Data Not Found';
+	echo 'Libro no encontrado';
 }
 ?>
