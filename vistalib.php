@@ -21,9 +21,9 @@
             $resultSet = mysqli_query($conexion, $sql);
             while ($row = mysqli_fetch_row($resultSet)) {
                 ?>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="card">
-                        <img src="img/<?php echo $row[0]; ?>" class="card-img-top" alt="...">
+                        <img src="img/<?php echo $row[0]; ?>" class="card-img-top" alt="..." alt="" width="50px" height="350px">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $row[1] ?></h5>
                             <p class="card-text">
