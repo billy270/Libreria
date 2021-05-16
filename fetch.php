@@ -34,6 +34,7 @@ if(mysqli_num_rows($result) > 0)
 							<th>Genero</th>
 							<th>Autor</th>
 							<th>Disponible</th>
+							<th>Opciones</th>
 						</tr>';
 	while($row = mysqli_fetch_array($result))
 	{
@@ -44,6 +45,7 @@ if(mysqli_num_rows($result) > 0)
 				<td>'.$row["Genero"].'</td>
 				<td>'.$row["Autor"].'</td>
 				<td>'.$row["Disponible"].'</td>
+				<th><a href="#" class="btn btn-danger">Eliminar</a> <a href="#" class="btn btn-warning">Modificar</a> </th>
 			</tr>
 		';
 	}
@@ -53,4 +55,6 @@ else
 {
 	echo 'Libro no encontrado';
 }
+
+
 ?>
