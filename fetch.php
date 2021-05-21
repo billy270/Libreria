@@ -21,7 +21,7 @@ if(isset($_POST["query"]))
 else
 {
 	$query = "
-	SELECT * FROM libros ORDER BY ISBM";
+	SELECT * FROM libros ORDER BY ISBN";
 }
 $result = mysqli_query($conexion, $query);
 if(mysqli_num_rows($result) > 0)
@@ -29,7 +29,7 @@ if(mysqli_num_rows($result) > 0)
 	$output .= '<div class="table-responsive">
 					<table class="table table bordered">
 						<tr>
-							<th>ISBM</th>
+							<th>ISBN</th>
 							<th>Libro</th>
 							<th>Genero</th>
 							<th>Autor</th>
@@ -40,7 +40,7 @@ if(mysqli_num_rows($result) > 0)
 	{
 		$output .= '
 			<tr>
-				<td>'.$row["ISBM"].'</td>
+				<td>'.$row["ISBN"].'</td>
 				<td>'.$row["Libro"].'</td>
 				<td>'.$row["Genero"].'</td>
 				<td>'.$row["Autor"].'</td>

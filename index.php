@@ -20,8 +20,6 @@
 				</div>
 				<tr>
 				<th><a href="#" class="btn btn-success">Añadir libro</a></th>
-				<th><a href="#" class="btn btn-danger">Eliminar Libro</a></th>
-				<th><a href="#" class="btn btn-warning">Modificar Libro</a></th>
 				</tr>
 			</div>
 			<br />
@@ -36,38 +34,7 @@
 	</body>
 </html>
 
-<script src="js/helper.js"></script>
-    <script>
 
-       $(".eliminar").click(function(){
-        var clave = $(this).attr("id");
-        $.ajax({
-          url : "procesa.php",
-          data : "opc=eliminar&clave="+clave,
-          type : "post",
-          success: function()
-          {
-            location.reload();
-          }
-        })
-      });
-       
-       $(".modificar").click(function(){
-        var clave = $(this).attr("id");
-         $.ajax({
-          url : "procesa.php",
-          data : "opc=modificar-form&clave="+clave,
-          type : "post",
-          success: function($datos)
-          {
-            $(".datos").html($datos);
-          }
-        })
-        $('#modificar').modal('show');
-      });
-    </script>
-
-	
 <script>
 $(document).ready(function(){
 	load_data();
