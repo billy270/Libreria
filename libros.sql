@@ -2,6 +2,7 @@
 -- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
+
 -- Servidor: 127.0.0.1
 -- Tiempo de generación: 16-05-2021 a las 22:33:17
 -- Versión del servidor: 10.4.11-MariaDB
