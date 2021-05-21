@@ -12,4 +12,5 @@ if(!$conexion)
     echo "La conexión fallo";
 }
 
+
 ?>
